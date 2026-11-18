@@ -1,0 +1,59 @@
+{
+  "definition": {
+    "name": "多语种推送表现概览",
+    "subject": "推送事件",
+    "table": "deliveries",
+    "group": "variant",
+    "measure": "opens"
+  },
+  "tables": {
+    "campaigns": [
+      {
+        "campaign": "craft-week",
+        "language": "en",
+        "timezone": "UTC+1"
+      },
+      {
+        "campaign": "craft-week",
+        "language": "es",
+        "timezone": "UTC-5"
+      }
+    ],
+    "audiences": [
+      {
+        "audience_id": "a1",
+        "market": "west"
+      },
+      {
+        "audience_id": "a2",
+        "market": "south"
+      }
+    ],
+    "deliveries": [
+      {
+        "delivery_id": "d1",
+        "campaign": "craft-week",
+        "variant": "short",
+        "audience_id": "a1",
+        "opens": 14,
+        "sent": 40
+      },
+      {
+        "delivery_id": "d2",
+        "campaign": "craft-week",
+        "variant": "long",
+        "audience_id": "a2",
+        "opens": 11,
+        "sent": 35
+      },
+      {
+        "delivery_id": "d3",
+        "campaign": "craft-week",
+        "variant": "short",
+        "audience_id": "a2",
+        "opens": 7,
+        "sent": 20
+      }
+    ]
+  }
+}
