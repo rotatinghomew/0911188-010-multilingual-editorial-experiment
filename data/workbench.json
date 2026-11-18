@@ -1,0 +1,105 @@
+{
+  "experiment": "craft-week",
+  "control": "short",
+  "treatment": "story",
+  "stop": "2026-06-18T00:00:00Z",
+  "minimum": 2,
+  "assignment": [
+    {
+      "unit": "u1",
+      "arm": "short",
+      "language": "en",
+      "active": true
+    },
+    {
+      "unit": "u2",
+      "arm": "story",
+      "language": "en",
+      "active": true
+    },
+    {
+      "unit": "u3",
+      "arm": "short",
+      "language": "fr",
+      "active": true
+    },
+    {
+      "unit": "u4",
+      "arm": "story",
+      "language": "fr",
+      "active": true
+    },
+    {
+      "unit": "u5",
+      "arm": "story",
+      "language": "en",
+      "active": true
+    },
+    {
+      "unit": "u6",
+      "arm": "short",
+      "language": "en",
+      "active": false
+    }
+  ],
+  "exposures": [
+    {
+      "id": "e1",
+      "unit": "u1",
+      "arm": "short",
+      "at": "2026-06-16T20:00:00Z",
+      "opened": false
+    },
+    {
+      "id": "e2",
+      "unit": "u2",
+      "arm": "story",
+      "at": "2026-06-16T20:00:00Z",
+      "opened": true
+    },
+    {
+      "id": "e3",
+      "unit": "u3",
+      "arm": "story",
+      "at": "2026-06-16T21:00:00Z",
+      "opened": true
+    },
+    {
+      "id": "e4",
+      "unit": "u4",
+      "arm": "story",
+      "at": "2026-06-18T03:00:00Z",
+      "opened": true
+    },
+    {
+      "id": "e5",
+      "unit": "u4",
+      "arm": "short",
+      "at": "2026-06-17T03:00:00Z",
+      "opened": false
+    },
+    {
+      "id": "e6",
+      "unit": "u6",
+      "arm": "short",
+      "at": "2026-06-16T20:00:00Z",
+      "opened": true
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "w1",
+      "unit": "u6",
+      "at": "2026-06-16T09:00:00Z"
+    }
+  ],
+  "look_plan": {
+    "end": "2026-06-20T00:00:00Z",
+    "required_languages": [
+      "en",
+      "fr"
+    ],
+    "max_drop_pp": 10,
+    "interim_approved": false
+  }
+}
